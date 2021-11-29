@@ -6,11 +6,13 @@
 #то в первый месяц моя сумма превратится по формуле ( годовой процент / 12 * основная сумма + основная сумма).
 #То есть 0.12/121000000 + 1000000 = 10010000.
 # Следующий месяц процент будет от уже увеличенной суммы 0.12/121010000 + 1010000 = 1020100
-deposit_amount = int(input("Введите первоначальную сумму: "))
-rate = int(input("Введите ставку депозита:"))
+deposit_amount = int(input("Введите сумму депозита: "))
 desire_value= int(input("Введите желаемую конечную сумму: "))
-term = desire_value/
+rate = int(input("Введите годовой процент:"))
+desire_value= int(input("Введите желаемую конечную сумму: "))
+term = sqrt = smp.sqrt(num)
+desire_value/ deposit_amount*(((1+(rate/100/12)/**12*(term))
 
 desire_value = deposit_amount*(((1+(rate/100)/term))**(term))
 print(desire_value)
-
+PV*((1+rate/12)**12*time)
