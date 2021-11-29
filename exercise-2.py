@@ -6,11 +6,15 @@
 #то в первый месяц моя сумма превратится по формуле ( годовой процент / 12 * основная сумма + основная сумма).
 #То есть 0.12/121000000 + 1000000 = 10010000.
 # Следующий месяц процент будет от уже увеличенной суммы 0.12/121010000 + 1010000 = 1020100
-deposit_amount = int(input("Введите первоначальную сумму: "))
-rate = int(input("Введите ставку депозита:"))
+deposit_amount = int(input("Введите сумму депозита: "))
+rate = int(input("Введите годовой процент:"))
 desire_value= int(input("Введите желаемую конечную сумму: "))
-term = desire_value/
+term = 0
 
-desire_value = deposit_amount*(((1+(rate/100)/term))**(term))
-print(desire_value)
+while deposit_amount < desire_value:
+    term += 1
+    deposit_amount = (rate/100)/12*deposit_amount+deposit_amount
+    print(f'{term}  {deposit_amount}')
+print(f'необходимо:{term} месяцев для накопления {desire_value}')
+
 
