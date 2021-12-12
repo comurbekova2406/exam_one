@@ -21,7 +21,6 @@ def adder(*info):
 
 print(adder('x', 5, 'John'))
 
-#3
 
 
 def func(items):
