@@ -7,18 +7,35 @@ a.insert(-1, 'Element')
 print(a)
 
 # 2-ая
-#должна принимать производное количество аргументов и возвращать словарь,
+
 
 def adder(*info):
-    info
+    new_info = dict()
 
-# где ключами являются принятые аргументы, а значениями числа от 1 до количества принятых аргументов
-#
-# Пример:
-#
-# print(func('x', 5, 'John')) # {'x':1, 5:2, 'John':3}
-# 3-я должна принять кортеж. Превращать этот кортеж в список и, используя анономные функции, выдавать нам на выход 2 списка. 1-ый список должен состоять из всех чётных чисел введённого кортежа. 2-ой со всеми элементами введённого кортежа возведёнными в квадратную степень
-#
-# Пример:
-#
-# a, b = func((1,2,3,4,5)) print(a) #[2, 4] print(b) #[1, 4, 9, 16, 25]
+    for i, item in enumerate(info, start=1):
+        new_info[item] = i
+
+    return new_info
+
+
+print(adder('x', 5, 'John'))
+
+# 3-я
+
+
+def func(items):
+    even_number =[]
+    squared_numbers =[]
+
+    for item in items:
+        if item % 2 == 0:
+            even_number.append(item)
+        squared_numbers.append(pow(item, 2))
+
+    return even_number, squared_numbers
+
+
+a, b = func((1, 2, 3, 4, 5))
+print(a)
+print(b)
+
