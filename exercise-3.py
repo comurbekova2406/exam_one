@@ -1,3 +1,4 @@
+# 1
 a = [45, 95, 'hello', 'cat']
 
 a.insert(0, 'Start')
@@ -20,7 +21,7 @@ def adder(*info):
 
 print(adder('x', 5, 'John'))
 
-# 3-я
+#3
 
 
 def func(items):
