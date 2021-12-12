@@ -15,6 +15,8 @@ while deposit_amount < desire_value:
     term += 1
     deposit_amount = (rate/100)/12*deposit_amount+deposit_amount
     print(f'{term}  {deposit_amount}')
+
+
 print(f'необходимо:{term} месяцев для накопления {desire_value}')
 
 
